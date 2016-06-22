@@ -1,0 +1,4 @@
+.awcache/
+.idea/
+node_modules/
+typings/

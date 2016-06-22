@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "diagnostics": true,
+    "experimentalDecorators": true,
+    "jsx": "preserve",
+    "module": "es6",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "outDir": "target/typescript",
+    "pretty": true,
+    "removeComments": false,
+    "rootDir": "src/main",
+    "target": "es6"
+  },
+  "exclude": [
+    "node_modules",
+    "typings"
+  ],
+  "awesomeTypescriptLoaderOptions": {
+    "useWebpackText": true,
+    "useBabel": true,
+    "useCache": true,
+    "forkChecker": true,
+    "externals": [
+      "src/main/typings/index.d.ts"
+    ]
+  }
+}
