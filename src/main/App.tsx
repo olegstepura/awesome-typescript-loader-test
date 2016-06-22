@@ -12,7 +12,7 @@ export class App extends Component<{}, {}> {
   render() {
     return (
       <div>
-        <h1>App</h1>
+        <h1>Test App</h1>
         <Test1 />
       </div>
     )

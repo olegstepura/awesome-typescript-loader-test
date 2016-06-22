@@ -6,7 +6,6 @@ const log = require('single-line-log').stdout
 const keypress = require('keypress')
 const colog = require('colog')
 
-const webpackCompiler = webpack(config)
 const devServerConfig = {
   publicPath: config.output.publicPath,
   hot: true,
@@ -23,6 +22,7 @@ const devServerConfig = {
     'Access-Control-Allow-Origin': '*'
   },
 }
+const webpackCompiler = webpack(config)
 const { port, host } = config.devServer
 const now = () => (new Date()).toLocaleTimeString()
 
