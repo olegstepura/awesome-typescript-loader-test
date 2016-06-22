@@ -5,7 +5,7 @@ import { App } from './App'
 import { AppContainer } from 'react-hot-loader'
 
 const domElement = document.getElementById('root')
-const renderApp = (RootComponent: Component) => {
+const renderApp = (RootComponent: new () => Component<any, any>) => {
   render(
     <AppContainer>
       <RootComponent />
