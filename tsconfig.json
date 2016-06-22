@@ -23,6 +23,7 @@
     "useBabel": true,
     "useCache": true,
     "forkChecker": true,
+    "instanceName": "awesome-typescript",
     "externals": [
       "src/main/typings/index.d.ts"
     ]
