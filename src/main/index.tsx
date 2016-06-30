@@ -14,7 +14,7 @@ const domElement = document.getElementById('root')
 const renderApp = (RootComponent: new () => Component<RootProps, any>) => {
   render(
     <AppContainer>
-      <RootComponent store={store} history={history} routes={routes} />
+      <RootComponent store={store} history={history} routes={routes()} />
     </AppContainer>,
     domElement
   )
