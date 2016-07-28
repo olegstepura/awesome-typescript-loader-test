@@ -9,7 +9,7 @@ export class Home extends Component<{}, {}> {
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/test1">test1</Link></li>
-          <li><Link to="/test2">test1</Link></li>
+          <li><Link to="/test2">test2</Link></li>
         </ul>
         {this.props.children}
       </div>

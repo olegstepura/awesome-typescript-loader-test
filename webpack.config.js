@@ -1,6 +1,7 @@
 const path = require('path')
 const webpack = require('webpack')
 const awesome = require('awesome-typescript-loader')
+const TsConfigPathsPlugin = require('awesome-typescript-loader').TsConfigPathsPlugin;
 
 const mainDir = 'src/main'
 const resolve = rpath => path.join(__dirname, rpath)
@@ -43,6 +44,9 @@ module.exports = {
       resolve(mainDir),
       resolve('node_modules'),
     ],
-    extensions: ['.ts', '.tsx', '.js', '.jsx', '.json', '.css']
+    extensions: ['.ts', '.tsx', '.js', '.jsx', '.json', '.css'],
+    plugins: [
+      new TsConfigPathsPlugin(/* { tsconfig, compiler } */)
+    ]
   },
 }
